@@ -17,6 +17,13 @@
           This is a paragraph. This is a paragraph. This is a paragraph. This is
           a paragraph. This is a paragraph. This is a paragraph.
         </p>
+        <span>Hi, {{name}}!</span>
+        <h1>{{question}}!</h1>
+        <p>
+          {{paragraph}} This is a paragraph. This is a paragraph. This is a
+          paragraph. This is a paragraph. This is a paragraph.
+        </p>
+        <button onclick="">Click me {{feel}}!</button>
       </main>
       <footer>
         <p>&copy; 2026</p>
@@ -27,7 +34,11 @@
       createApp({
         setup() {
           const name = ref("Rushita");
-          return { name };
+          const question = ref("How are you?");
+          const paragraph = ref("starting...");
+          const feel = ref("Owww");
+
+          return { name, question, paragraph, feel };
         },
       }).mount("#app");
     </script>
