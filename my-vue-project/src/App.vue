@@ -1,19 +1,11 @@
 <script setup>
-import { ref } from "vue";
-const name = ref("Rushita");
-const year = ref("2026");
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
-  <h1>Hello {{ name }}</h1>
-  <footer>
-    &copy;
-    <p>{{ year }}</p>
-  </footer>
+  <Header />
+  <Footer />
 </template>
 
-<style scoped>
-footer p {
-  color: red;
-}
-</style>
+<style scoped></style>
